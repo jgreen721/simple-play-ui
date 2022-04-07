@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .app {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .top-bar {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: red;
+      }
+
+      .main {
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .play-btn {
+        border-radius: 50%;
+        border: 1px solid black;
+        height: 150px;
+        width: 150px;
+        transform: translateY(-35px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .play-img {
+        height: 60px;
+        cursor: pointer;
+        /* border: 2px solid black; */
+      }
+
+      .arrow-row {
+        height: 30%;
+        width: 75%;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .flip {
+        transform: rotate(180deg) scale(3);
+      }
+
+      .bottom {
+        height: 30%;
+        width: 100%;
+        background: black;
+        color: white;
+      }
+
+      .text-center {
+        text-align: center;
+        height: 10%;
+      }
+
+      .p-1 {
+        padding: 1em;
+      }
+
+      .flex-evenly {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90%;
+        width: 75%;
+        margin: 0 auto;
+      }
+
+      img {
+        transform: scale(3);
+        cursor: pointer;
+      }
+    </style>
+    <title>Play-UI</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="top-bar">
+        <h2>RECORDING</h2>
+      </div>
+
+      <div class="main">
+        <div class="play-btn">
+          <img class="play-img" src="play.png" alt="play-btn" />
+        </div>
+        <div class="arrow-row">
+          <img class="flip" src="next.svg" alt="next" />
+          <img src="next.svg" alt="next" />
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="text-center">
+          <h3 class="p-1">VOLUME</h3>
+        </div>
+        <div class="flex-evenly">
+          <img src="remove.svg" alt="img" />
+
+          <img src="add.svg" alt="img" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
